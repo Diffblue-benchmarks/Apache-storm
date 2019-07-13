@@ -1,3 +1,4 @@
+buildCmd: mvn package -e -X -DskipTests
 testCmd: true
 lineLength: 4096
 skipVerification: true
@@ -154,3 +155,314 @@ phases:
       throw-runtime-exceptions: false
       # Set an upper bound on loop unwinding.
       unwind: 6
+units:
+ - target:
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/ClusterUtils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/ClusterUtils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/ClusterWorkerHeartbeat.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/ClusterWorkerHeartbeat.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/assignments/LocalAssignmentsBackendFactory.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/assignments/LocalAssignmentsBackendFactory.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/ProfileAction.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/ProfileAction.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/ExecutorBeat.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/ExecutorBeat.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/StateStorageFactory.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/StateStorageFactory.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/serialization/SerializationDelegate.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/serialization/SerializationDelegate.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/validation/ConfigValidation$Validator.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/validation/ConfigValidation.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/WorkerTokenServiceType.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/WorkerTokenServiceType.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/ClusterStateContext.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/ClusterStateContext.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/DaemonType.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/DaemonType.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/assignments/ILocalAssignmentsBackend.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/assignments/ILocalAssignmentsBackend.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/Utils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/Utils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/IStormClusterState.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/IStormClusterState.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/assignments/InMemoryAssignmentBackend.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/assignments/InMemoryAssignmentBackend.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/validation/ConfigValidation.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/validation/ConfigValidation.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/StormClusterStateImpl$1.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/StormClusterStateImpl.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/StormClusterStateImpl.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/StormClusterStateImpl.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/IStateStorage.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/IStateStorage.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ConfigUtils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ConfigUtils.java
+ - target:
+   - dir: storm-client/target/classes
+     file: org/apache/storm/container/cgroup/core/DevicesCore$Record.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/container/cgroup/core/DevicesCore.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/container/cgroup/Device.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/container/cgroup/Device.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/container/cgroup/core/DevicesCore.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/container/cgroup/core/DevicesCore.java
+ - target:
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/WritableUtils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/WritableUtils.java
+ - target:
+   - dir: storm-client/target/classes
+     file: org/apache/storm/zookeeper/ClientZookeeper.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/zookeeper/ClientZookeeper.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ObjectReader$1.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ObjectReader.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/VersionedData.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/VersionedData.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/CuratorUtils$2.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/CuratorUtils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ZookeeperAuthInfo.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ZookeeperAuthInfo.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/cluster/DaemonType.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/cluster/DaemonType.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/CuratorUtils$1.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/CuratorUtils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/Utils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/Utils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ObjectReader.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ObjectReader.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/callback/WatcherCallBack.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/callback/WatcherCallBack.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/StormBoundedExponentialBackoffRetry.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/StormBoundedExponentialBackoffRetry.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/CuratorUtils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/CuratorUtils.java
+ - target:
+   - dir: storm-client/target/classes
+     file: org/apache/storm/daemon/StormCommon.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/daemon/StormCommon.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/task/WorkerTopologyContext.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/task/WorkerTopologyContext.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/SpoutSpec.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/SpoutSpec.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/metric/MetricsConsumerBolt.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/metric/MetricsConsumerBolt.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/StreamInfo.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/StreamInfo.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/metric/filter/FilterByMetricName.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/metric/filter/FilterByMetricName.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/Thrift.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/Thrift.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/task/GeneralTopologyContext.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/task/GeneralTopologyContext.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/Utils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/Utils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/InvalidTopologyException.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/InvalidTopologyException.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/task/IBolt.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/task/IBolt.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/ComponentObject.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/ComponentObject.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/StateSpoutSpec.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/StateSpoutSpec.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/metric/SystemBolt.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/metric/SystemBolt.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/SharedMemory.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/SharedMemory.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/daemon/Acker.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/daemon/Acker.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ObjectReader.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ObjectReader.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/GlobalStreamId.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/GlobalStreamId.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/Grouping.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/Grouping.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/Bolt.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/Bolt.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/security/auth/IAuthorizer.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/security/auth/IAuthorizer.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/ComponentCommon.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/ComponentCommon.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/metric/util/DataPointExpander.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/metric/util/DataPointExpander.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ConfigUtils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ConfigUtils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/StormTopology.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/StormTopology.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/WrappedInvalidTopologyException.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/WrappedInvalidTopologyException.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/metric/EventLoggerBolt.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/metric/EventLoggerBolt.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/NullStruct.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/NullStruct.java
+ - target:
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ConfigUtils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ConfigUtils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/daemon/supervisor/AdvancedFSOps.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/daemon/supervisor/AdvancedFSOps.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/serialization/SerializationDelegate.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/serialization/SerializationDelegate.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ConfigUtils$2.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ConfigUtils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ConfigUtils$1.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ConfigUtils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/LocalState.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/LocalState.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/Utils.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/Utils.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/validation/ConfigValidation$Validator.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/validation/ConfigValidation.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/ObjectReader.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/ObjectReader.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/utils/VersionedStore.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/utils/VersionedStore.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/generated/StormTopology.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/generated/StormTopology.java
+   - dir: storm-client/target/classes
+     file: org/apache/storm/validation/ConfigValidation.class
+     sourceDir: storm-client/src/jvm
+     sourceFile: org/apache/storm/validation/ConfigValidation.java
